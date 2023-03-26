@@ -1,5 +1,14 @@
 gitgpt() {
-  OPENAI_API_KEY=$OPENAI_API_KEY
+	if ! command -v jq >/dev/null; then
+    echo "Error: jq is not installed. Please install jq and try again."
+    return 1
+  fi
+
+  if [ -z "$OPENAI_API_KEY" ]; then
+    echo "Error: OPENAI_API_KEY is not set. Please set your API key and try again."
+    return 1
+  fi
+
 
   QUERY="$@"
   PRMPT="Tell me exactly what GIT command I can copy and paste to run in my terminal that will achieve ${QUERY}. Answer a valid GIT command and nothing else."
