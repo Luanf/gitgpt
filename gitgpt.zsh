@@ -1,5 +1,5 @@
 gitgpt() {
-	if ! command -v jq >/dev/null; then
+  if ! command -v jq >/dev/null; then
     echo "Error: jq is not installed. Please install jq and try again."
     return 1
   fi
