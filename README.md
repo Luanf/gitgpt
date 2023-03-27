@@ -13,9 +13,9 @@ chmod +x install.sh
 ./install.sh
 ```
 
-This will copy gitgpt into your ```.zshrc``` file
+This will copy gitgpt into your ```.zshrc``` file. Modify it accordingly if you are not a zsh user.
 
-Make sure you have the OPENAI_API_KEY environment variable set.
+Make sure you have the OPENAI_API_KEY environment variable set. 
 
 You can do so by running:
 
@@ -31,5 +31,5 @@ You will be asked to confirm if you want to run the command or not.
 
 ## Thanks for being here
 
-If you enjoyed this, you might like cligpt - to get suggestions for general Linux commands.
+If you enjoyed this, you might like [CliGPT](https://github.com/Luanf/cligpt) - to get suggestions for general Linux commands.
 
